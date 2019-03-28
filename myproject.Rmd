@@ -20,7 +20,7 @@ It is well known that individual well-being can be influenced by climatic condit
 ## Read data
 data <- read.table("data.txt", header = TRUE)
 # correct error
-
+datos <- datos[-c(12,36, 57),]
 # Fit linear model
 model <- lm(happiness ~ sunshine, data = data)
 
